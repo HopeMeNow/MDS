@@ -1,0 +1,83 @@
+.sidenav {
+  border-style: dotted;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding-top: 100px;
+  background-color: #a9dcd6;
+  font-family: Optima;
+}
+
+.header {
+  border-style: none;
+  width: 100%;
+  height: 100px;
+  top: -1.1ex;
+  left: -1ex;
+  position: relative;
+  z-index: 10;
+  background-color: #
+  333;
+}
+
+.sidenav__title {
+  margin-top: 80px;
+  margin-left: 20px;
+  font-family: Optima;
+  font-size: 140%;
+}
+
+.header__title,
+.header__subtitle {
+  margin-left: 220px;
+  color: blue;
+  background-color: #ffd358;
+  font-family: Optima;
+  font-size: 200%;
+}
+
+.header__title {
+  margin-top: 15px;
+  font-family: Optima;
+}
+
+.header__subtitle {
+  font-size: 125%;
+  font-family: Optima;
+}
+
+.main {
+  margin-left: 210px;
+  width: 800px;
+  font-family: Optima;
+  text-align: justify;
+}
+
+.paragraph {
+  width: 800px;
+  margin-left: 50px;
+  font-family: Optima;
+  text-align: left;
+}
+
+.reference {
+  width: 800px;
+  margin-left: 50px;
+  color: blue;
+  font-family: Optima;
+  text-align: left;
+}
+
+.woof_table {
+  margin-left: 50px;
+  border: 1px solid red;
+}
+
+
+.woof_table th, .woof_table td {
+  margin-left: 50px;
+  border: 1px solid red;
+  text-align: center;
+}

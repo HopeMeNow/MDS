@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Quadratic equations solver</title>
+		<link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}">
+	</head>
+
+	<body>
+		<div class="content">
+			<h3>Enter coefficients of the quadratic equation:</h3>
+			<div class="equation">
+				<span class="coeff_a">a</span>
+				<span>
+					x<sup>2</sup> +
+				</span>
+				<span class="coeff_b"> b</span>
+				<span>x + </span>
+				<span class="coeff_c">c</span>
+				<span> = 0</span>
+			</div>
+			<form action="/plot" method="post" enctype="multipart/form-data">
+				<div class="line a">
+					<label>
+						<span>a:</span>
+					</label>
+					<input type="text" name="a">
+				</div>
+				
+				<div class="line b">
+					<label>
+						<span>b:</span>
+					</label>
+					<input type="text" name="b">
+				</div>
+
+				<div class="line c">
+					<label>
+						<span>c:</span>
+					</label>
+					<input type="text" name="c">
+				</div>
+				<input type="submit" name="submit" value="Plot!">
+			</form>
+		</div>
+	</body>
+
+</html>

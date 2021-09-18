@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Quadratic Equation Solver</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap">
+		<link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+	</head>
+	<body>
+		<div class="header">Quadratic Equation Solver</div>
+		<div class="page-content">
+			<h2>
+			To solve an quadratic equation of form <span class="letter">a</span>x<sup>2</sup>+<span class="letter">b</span>x+<span class="letter">c</span>=0
+			<br>
+			Just enter the values of <span class="letter">a</span>, <span class="letter">b</span> and <span class="letter">c</span> below:
+			</h2>
+			<form action="/plot" method="post">
+				<table style="margin-left:auto; margin-right:auto;">
+					<tr>
+						<td><span class="letter">a</span></td>
+						<td/>
+						<td/>
+						<td><span class="letter">b</span></td>
+						<td/>
+						<td/>
+						<td><span class="letter">c</span></td>
+						<td/>
+					</tr>
+					<tr style="font-size: 20px;">
+						<td><input type="text" name="a" required/></td>
+						<td>x<sup style="font-size: 16px;">2</sup></td>
+						<td>+</td>
+						<td><input type="text" name="b" required/></td>
+						<td>x</td>
+						<td>+</td>
+						<td><input type="text" name="c" required/></td>
+						<td>=0</td>
+					</tr>
+				</table>
+				<div>
+					<button type="submit">Plot</button>
+					<button type="reset">Reset</button>
+				</div>
+			</form>
+		</div>
+		<div class="footer">2021, by Aleksey Sorokin</div>
+	</body>
+</html>

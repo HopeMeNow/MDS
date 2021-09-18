@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <title>Main Page</title>
+        <link rel="stylesheet"
+              href="{{ url_for('static', path='/style.css') }}">
+    </head>
+    <body>
+        <h3>{{ message }}</h3>
+
+
+        <form action="/plot" method="get" enctype="multipart/form-data">
+            Coeff 'a':
+            <input type="text" name="a" id="a"><br><br>
+            Coeff 'b':
+            <input type="text" name="b" id="b"><br><br>
+            Coeff 'c':
+            <input type="text" name="c" id="c"><br><br>
+
+            <button type="submit">Calculate roots of a*x^2+b*x+c=0 & Plot</button>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Quadratic equations solver</title>
+		<link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}">
+	</head>
+	<body>
+		<div class="content">
+			<h3>Solution:</h3>
+			<div class="equation">
+				<span class="coeff_a">{{ coeff_a }}</span>
+				<span>
+					x<sup>2</sup>
+				</span>
+				<span class="coeff_b"> {{ coeff_b }}</span>
+				<span>x</span>
+				<span class="coeff_c"> {{ coeff_c }}</span>
+				<span> = 0</span>
+			</div>
+			<br>
+			<span>{{message}}</span>
+			<img src="data:image/png;base64, {{plot}}", alt="plot">
+			<a href="/main">Go back</a>
+		</div>
+	</body>
+</html>

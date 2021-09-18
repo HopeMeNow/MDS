@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+body {
+    margin: 0 auto;
+    font-family: Arial;
+    width:75%;
+}
+
+
+.sectionHeader {
+    text-align: center;
+    padding: 32px;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+
+.imageGrid {
+  line-height: 0;
+}
+.imageGrid .tile {
+  width:33.33%;
+  min-height:20em;
+  line-height: 1.2;
+  display:inline-block;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  
+  color:#fff;
+  font-family:"Verdana",sans-serif;
+  text-shadow: 2px 2px 2px #000;
+  cursor: pointer; 
+  cursor: hand;
+}
+
+.imageGrid .tile:before {
+  content: '';
+  background-color: rgba(15,15,15,0.5);
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  position: absolute;
+}
+
+.imageGrid .tile:hover:before {
+  display: none;
+}
+
+.imageGrid .tile .textWrapper {
+  text-align: center;
+  vertical-align: middle;
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: .75em;
+}
+
+.imageGrid .tile .textWrapper .content {
+  display: none;
+}
+
+.imageGrid .tile:hover .textWrapper .content {
+  display: block;
+}
+
+.imageGrid .tile:hover .textWrapper .content h2 {
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .imageGrid .tile {
+    width: 50%;
+  }
+}
+ 
+@media (max-width: 700px) {
+  .imageGrid .tile {
+    width: 100%;
+  }
+  
+}
+
+a { color: white; }
+
+/* Dashed border */
+hr.dashed {
+  border-top: 3px dashed #bbb;
+}
+
+/* Dotted border */
+hr.dotted {
+  border-top: 3px dotted #bbb;
+}
+
+/* Solid border */
+hr.solid {
+  border-top: 3px solid #bbb;
+}
+
+/* Rounded border */
+hr.rounded {
+  border-top: 8px solid #bbb;
+  border-radius: 5px;
+}
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #af2c2c75;
+  color: white;
+  font-size: 350%;
+  text-align: center;
+}
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}

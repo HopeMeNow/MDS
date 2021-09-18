@@ -1,0 +1,79 @@
+.welcome_message {
+	text-align: center;
+	color: #13FD44;
+}
+
+#picture {
+	margin-left: auto;  
+	margin-right: auto;  
+	border: 8px ridge blue;  
+	padding: 5px;
+	height: 200px;
+	display: block;
+}
+
+.main {
+	margin-left: 200px;
+	margin-right: 200px;
+}
+
+
+.navigation {
+	border-style: solid;
+	width: 200px
+}
+
+.content_head {
+	text-align: center;	
+}
+
+.biography, .feedback {
+	margin-left: 100px;
+	margin-right: 100px;
+	border-style: solid;
+	text-align: justify;
+}
+
+.bio_head, .fav_head, .form {
+	margin-left: 10px;
+}
+
+.paragraph_1_head, .paragraph_1, .paragraph_2_head, .paragraph_2, .paragraph_3_head, .paragraph_3, .paragraph_4_head, .paragraph_4  {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+.favorite_albums {
+	margin-left: 100px;
+	margin-right: 100px;
+	border-style: solid;
+	text-align: justify;
+}
+
+.fav_table{
+	border: 1px solid black;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+thead, th, tfoot, tr, td {
+	border: 1px solid black;
+}
+
+thead, th, .listen {
+	text-align: center;
+}
+
+.album_title {
+	margin-top: 10px;
+	text-align: center;
+}
+
+.album_cell {
+	background-image: url("back.jpeg");
+}
+
+footer {
+	font-size: 10px;
+}

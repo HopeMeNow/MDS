@@ -1,0 +1,11 @@
+,Dwayne Johnson,Chris Hemsworth,Robert Downey Jr.,Akshay Kumar,Jackie Chan,Bradley Cooper,Adam Sandler,Scarlett Johansson,Sofia Vergara,Chris Evans
+Dwayne Johnson,0.0,inf,inf,inf,inf,inf,inf,inf,inf,inf
+Chris Hemsworth,3.0,0.0,inf,inf,inf,inf,inf,inf,inf,inf
+Robert Downey Jr.,3.0,3.0,0.0,inf,inf,inf,inf,inf,inf,inf
+Akshay Kumar,inf,inf,inf,0.0,inf,inf,inf,inf,inf,inf
+Jackie Chan,inf,inf,inf,inf,0.0,inf,inf,inf,inf,inf
+Bradley Cooper,inf,3.0,inf,inf,inf,0.0,inf,inf,inf,inf
+Adam Sandler,inf,3.0,3.0,inf,2.0,inf,0.0,inf,inf,inf
+Scarlett Johansson,2.0,3.0,3.0,inf,3.0,inf,3.0,0.0,inf,inf
+Sofia Vergara,inf,inf,3.0,inf,inf,inf,3.0,3.0,0.0,inf
+Chris Evans,3.0,1.0,3.0,3.0,3.0,3.0,3.0,1.0,2.0,0.0

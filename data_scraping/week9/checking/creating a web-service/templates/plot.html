@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Quadratic Equation Solver</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap">
+		<link rel="stylesheet" href="{{ url_for('static', path='/css/style.css') }}">
+	</head>
+	<body>
+		<div class="header">Equation Graph</div>
+		<div class="page-content">
+			<a href="/main">&lt;&lt; Back to the form</a>
+			<br>
+			<h2>{{ roots_desc }}</h2>
+			<img src="data:image/png;base64, {{ plot_img }}">
+		</div>
+		<div class="footer">2021, by Aleksey Sorokin</div>
+	</body>
+</html>
